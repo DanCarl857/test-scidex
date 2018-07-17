@@ -40,14 +40,16 @@ class Photos extends Component {
             )
         } else { // once loading is done, data is now available
             if (_.isEmpty(this.props.data)) {
-                <div>
-                    <p>No photos yet!</p>
-                </div>
+                return (
+                    <div>
+                        <p>No photos yet!</p>
+                    </div>
+                )
             } else {
                 return _.map(this.props.data, (photo, key) => {
                     return (
-                        <Col md={2} className="col-half-offset">
-                            <img key={key} src={photo.thumbnailUrl} alt="thumbnail" style={{ marginBottom: 50 }}/>
+                        <Col key={key} md={2} className="col-half-offset">
+                            <img src={photo.thumbnailUrl} alt="thumbnail" style={{ marginBottom: 50 }}/>
                         </Col>
                     );
                 })
@@ -68,6 +70,7 @@ class Photos extends Component {
     }
 }
 
+// Map redux state to component props
 function mapStateToProps(state) {
     return {
         data: state.photos.data,

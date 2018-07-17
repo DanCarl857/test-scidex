@@ -9,11 +9,11 @@
 }
 
 .sideNav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: 100%; 
   width: 250px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  z-index: 1;
+  top: 0;
   left: 0;
   background-color: #fff;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -22,7 +22,6 @@
 .main {
   margin-left: 250px;
   width: 120%; 
-  /* padding: 0px 10px; */
   background-color: #eff4fd;
 }
 
@@ -84,7 +83,6 @@
 
 .sideNavHeader {
   background-color: #785de5;
-  /* background: linear-gradient(135deg, rgb(105, 75, 227) 0%, rgb(100, 70, 219) 4%, rgb(37, 21, 125) 44%, rgb(19, 0, 61) 100%); */
   width: 100%;
   margin: auto;
   padding: 50px;
